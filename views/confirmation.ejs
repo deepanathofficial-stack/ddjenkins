@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<div class="confirmation-box">
+  <div class="check">✅</div>
+  <h1>Thank you, <%= order.customer.fullName.split(' ')[0] %>!</h1>
+  <p>Your order has been placed successfully.</p>
+  <div class="order-id">Order #<%= order.id %></div>
+  <p>A confirmation would normally be emailed to <strong><%= order.customer.email %></strong>.</p>
+  <p><strong>Total paid: $<%= order.total.toFixed(2) %></strong></p>
+  <a href="/" class="btn btn-primary">Continue Shopping</a>
+</div>
+
+<%- include('partials/footer') %>

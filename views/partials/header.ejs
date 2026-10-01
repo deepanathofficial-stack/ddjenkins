@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %> | ShopNode</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Shop<span>Node</span></a>
+      <form class="search-form" action="/" method="GET">
+        <input type="text" name="q" placeholder="Search products..." value="<%= typeof q !== 'undefined' ? q : '' %>" />
+        <button type="submit">Search</button>
+      </form>
+      <nav class="main-nav">
+        <a href="/">Shop</a>
+        <a href="/cart" class="cart-link">
+          Cart
+          <% if (typeof cart !== 'undefined' && cart && cart.itemCount > 0) { %>
+            <span class="cart-badge"><%= cart.itemCount %></span>
+          <% } %>
+        </a>
+        <a href="/admin">Admin</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "p001",
+    "name": "Classic Cotton T-Shirt",
+    "category": "Apparel",
+    "price": 19.99,
+    "stock": 50,
+    "image": "https://picsum.photos/seed/tshirt/500/500",
+    "description": "A soft, breathable 100% cotton t-shirt perfect for everyday wear. Available in multiple colors and true to size."
+  },
+  {
+    "id": "p002",
+    "name": "Wireless Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock": 30,
+    "image": "https://picsum.photos/seed/headphones/500/500",
+    "description": "Over-ear wireless headphones with active noise cancellation, 30-hour battery life, and crisp sound quality."
+  },
+  {
+    "id": "p003",
+    "name": "Stainless Steel Water Bottle",
+    "category": "Home & Kitchen",
+    "price": 24.5,
+    "stock": 80,
+    "image": "https://picsum.photos/seed/bottle/500/500",
+    "description": "Double-wall vacuum insulated bottle that keeps drinks cold for 24 hours or hot for 12. Leak-proof lid."
+  },
+  {
+    "id": "p004",
+    "name": "Leather Wallet",
+    "category": "Accessories",
+    "price": 34.0,
+    "stock": 40,
+    "image": "https://picsum.photos/seed/wallet/500/500",
+    "description": "Genuine leather bifold wallet with RFID-blocking technology and multiple card slots."
+  },
+  {
+    "id": "p005",
+    "name": "Yoga Mat",
+    "category": "Sports & Outdoors",
+    "price": 29.99,
+    "stock": 60,
+    "image": "https://picsum.photos/seed/yogamat/500/500",
+    "description": "Extra-thick non-slip yoga mat with carrying strap. Ideal for yoga, pilates, and general fitness."
+  },
+  {
+    "id": "p006",
+    "name": "Ceramic Coffee Mug Set (4-pack)",
+    "category": "Home & Kitchen",
+    "price": 22.0,
+    "stock": 45,
+    "image": "https://picsum.photos/seed/mug/500/500",
+    "description": "Set of 4 microwave and dishwasher safe ceramic mugs, 12oz each, in assorted colors."
+  },
+  {
+    "id": "p007",
+    "name": "Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 79.99,
+    "stock": 20,
+    "image": "https://picsum.photos/seed/keyboard/500/500",
+    "description": "RGB backlit mechanical keyboard with tactile switches, ideal for gaming and typing."
+  },
+  {
+    "id": "p008",
+    "name": "Running Shoes",
+    "category": "Sports & Outdoors",
+    "price": 64.99,
+    "stock": 35,
+    "image": "https://picsum.photos/seed/shoes/500/500",
+    "description": "Lightweight running shoes with breathable mesh upper and cushioned sole for all-day comfort."
+  },
+  {
+    "id": "p009",
+    "name": "Canvas Backpack",
+    "category": "Accessories",
+    "price": 45.0,
+    "stock": 25,
+    "image": "https://picsum.photos/seed/backpack/500/500",
+    "description": "Durable canvas backpack with padded laptop compartment, fits up to 15-inch laptops."
+  },
+  {
+    "id": "p010",
+    "name": "Desk Lamp with USB Port",
+    "category": "Home & Kitchen",
+    "price": 27.99,
+    "stock": 55,
+    "image": "https://picsum.photos/seed/lamp/500/500",
+    "description": "Adjustable LED desk lamp with 3 brightness levels and a built-in USB charging port."
+  }
+]

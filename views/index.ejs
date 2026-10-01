@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<h1 class="page-title">Our Products</h1>
+<p class="page-subtitle">Browse the full catalog<% if (activeCategory) { %> in <strong><%= activeCategory %></strong><% } %><% if (q) { %> matching "<%= q %>"<% } %></p>
+
+<div class="filters">
+  <a href="/" class="<%= activeCategory === '' ? 'active' : '' %>">All</a>
+  <% categories.forEach(function(cat) { %>
+    <a href="/?category=<%= encodeURIComponent(cat) %>" class="<%= activeCategory === cat ? 'active' : '' %>"><%= cat %></a>
+  <% }) %>
+</div>
+
+<% if (products.length === 0) { %>
+  <div class="empty-state">
+    <p>No products found. Try a different search or category.</p>
+  </div>
+<% } else { %>
+  <div class="product-grid">
+    <% products.forEach(function(p) { %>
+      <a class="product-card" href="/product/<%= p.id %>">
+        <img src="<%= p.image %>" alt="<%= p.name %>" />
+        <div class="product-card-body">
+          <span class="category"><%= p.category %></span>
+          <h3><%= p.name %></h3>
+          <span class="price">$<%= p.price.toFixed(2) %></span>
+        </div>
+      </a>
+    <% }) %>
+  </div>
+<% } %>
+
+<%- include('partials/footer') %>

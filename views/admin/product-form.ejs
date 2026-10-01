@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+<h1 class="page-title"><%= product ? 'Edit Product' : 'Add Product' %></h1>
+
+<form action="<%= product ? '/admin/products/' + product.id : '/admin/products' %>" method="POST">
+  <div class="form-grid">
+    <div class="form-group full">
+      <label>Name</label>
+      <input type="text" name="name" value="<%= product ? product.name : '' %>" required />
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <input type="text" name="category" value="<%= product ? product.category : '' %>" required />
+    </div>
+    <div class="form-group">
+      <label>Price ($)</label>
+      <input type="number" step="0.01" name="price" value="<%= product ? product.price : '' %>" required />
+    </div>
+    <div class="form-group">
+      <label>Stock</label>
+      <input type="number" name="stock" value="<%= product ? product.stock : '' %>" required />
+    </div>
+    <div class="form-group">
+      <label>Image URL</label>
+      <input type="text" name="image" value="<%= product ? product.image : '' %>" placeholder="https://..." />
+    </div>
+    <div class="form-group full">
+      <label>Description</label>
+      <textarea name="description" rows="4" required><%= product ? product.description : '' %></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary"><%= product ? 'Save Changes' : 'Add Product' %></button>
+  <a href="/admin" class="btn btn-secondary">Cancel</a>
+</form>
+
+<%- include('../partials/footer') %>
